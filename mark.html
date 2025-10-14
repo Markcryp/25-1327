@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Inventory and Dealerships</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: lightblue;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: navy;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    h2 {
+      color: darkred;
+      margin-top: 40px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px gray;
+    }
+
+    th, td {
+      border: 1px solid gray;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: lightgray;
+      color: black;
+    }
+
+    tr:nth-child(even) {
+      background-color: lavender;
+    }
+
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 14px;
+      }
+      header {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Car Inventory Dashboard</header>
+
+  <h2>Table 1: Car Inventory</h2>
+  <table>
+    <tr>
+      <th>Model</th>
+      <th>Color</th>
+      <th>Year</th>
+      <th>Price (KES)</th>
+    </tr>
+    <tr>
+      <td>Toyota Corolla</td>
+      <td>White</td>
+      <td>2020</td>
+      <td>1,200,000</td>
+    </tr>
+    <tr>
+      <td>Honda Civic</td>
+      <td>Red</td>
+      <td>2019</td>
+      <td>1,050,000</td>
+    </tr>
+    <tr>
+      <td>Subaru Forester</td>
+      <td>Black</td>
+      <td>2021</td>
+      <td>1,800,000</td>
+    </tr>
+  </table>
+
+  <h2>Table 2: Dealership Info</h2>
+  <table>
+    <tr>
+      <th>Dealer</th>
+      <th>Location</th>
+      <th>Contact</th>
+      <th>Available Models</th>
+    </tr>
+    <tr>
+      <td>AutoMark</td>
+      <td>Nairobi</td>
+      <td>0712345678</td>
+      <td>Corolla, Forester</td>
+    </tr>
+    <tr>
+      <td>DriveZone</td>
+      <td>Thika</td>
+      <td>0723456789</td>
+      <td>Civic</td>
+    </tr>
+    <tr>
+      <td>Elite Motors</td>
+      <td>Kisumu</td>
+      <td>0734567890</td>
+      <td>Forester, Civic</td>
+    </tr>
+  </table>
+
+</body>
+</html>
