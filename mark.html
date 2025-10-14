@@ -1,18 +1,19 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Car Inventory and Dealerships</title>
+  <title>Colorful Car Inventory</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: lightblue;
+      background-color: lightyellow;
       margin: 0;
       padding: 20px;
     }
 
     header {
-      background-color: navy;
+      background-color: darkgreen;
       color: white;
       padding: 15px;
       text-align: center;
@@ -20,7 +21,7 @@
     }
 
     h2 {
-      color: darkred;
+      color: navy;
       margin-top: 40px;
     }
 
@@ -44,8 +45,25 @@
       color: black;
     }
 
-    tr:nth-child(even) {
-      background-color: lavender;
+    /* 🎨 Unique cell colors */
+    td:nth-child(1) {
+      background-color: lightcoral;
+      color: white;
+    }
+
+    td:nth-child(2) {
+      background-color: lightgreen;
+      color: darkblue;
+    }
+
+    td:nth-child(3) {
+      background-color: lightblue;
+      color: darkred;
+    }
+
+    td:nth-child(4) {
+      background-color: peachpuff;
+      color: darkgreen;
     }
 
     @media (max-width: 600px) {
@@ -90,33 +108,6 @@
     </tr>
   </table>
 
-  <h2>Table 2: Dealership Info</h2>
-  <table>
-    <tr>
-      <th>Dealer</th>
-      <th>Location</th>
-      <th>Contact</th>
-      <th>Available Models</th>
-    </tr>
-    <tr>
-      <td>AutoMark</td>
-      <td>Nairobi</td>
-      <td>0712345678</td>
-      <td>Corolla, Forester</td>
-    </tr>
-    <tr>
-      <td>DriveZone</td>
-      <td>Thika</td>
-      <td>0723456789</td>
-      <td>Civic</td>
-    </tr>
-    <tr>
-      <td>Elite Motors</td>
-      <td>Kisumu</td>
-      <td>0734567890</td>
-      <td>Forester, Civic</td>
-    </tr>
-  </table>
-
 </body>
 </html>
+```
