@@ -1,69 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <h1>Car hub</h1>
-<br>
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
 
-<p class="highlight">You are valued here. Share freely — no judgment.</p>
-<p class="highlight">Your voice matters. Speak up, be heard.</p>
-<p class="highlight">Together, we build a supportive community.</p>
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-<br><br>
-<div class="post-card">
-  Share what’s on your mind today…
-</div>
-<br><br>
-<p class="highlight">Connect, support, and grow with us.</p>
-<br><br>
-<div class="banner">
-  <h2>Everyone’s choices matter</h2>
-</div>
-<br><br>
+h2, h3 {
+  color: #34495e;
+}
 
-<button class="cta-share">Start Looking</button>
+/* Highlighted paragraphs */
+.highlight {
+  background-color: #eaf6ff;
+  border-left: 4px solid #3498db;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
 
-<div class="relative-box">
-  Relative container (anchors positioned children)
-  <div class="absolute-badge">New</div>
-</div>
+/* Post card */
+.post-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-style: italic;
+  color: #555;
+}
 
-<div class="absolute-alone">
-Absolutely positioned outside any positioned parent
-</div>
-<br><br>
+/* Banner */
+.banner {
+  background-color: #ffefd5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-<div class="unit-parent">
-  <p class="px-size">Paragraph with px (16px)</p>
-  <p class="em-size">Paragraph with em (1.25em)</p>
-  <p class="rem-size">Paragraph with rem (1.25rem)</p>
-</div>
-<br><br>
+/* Call-to-action button */
+.cta-share {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-<section class="two-col">
-  <div class="feed">
-    <h3>Latest Shares</h3>
-    <p>“Feeling overwhelmed, taking it one step at a time.”</p>
-  </div>
-  <aside class="sidebar">
-    <h3>Community Tips</h3>
-    <ul>
-      <li>Speak kindly and respectfully.</li>
-    </ul>
-  </aside>
-</section>
-<br><br>
-<p class="rgb-text">This uses rgb(255,0,0)</p>
-<p class="hex-text">This uses #00ff00</p>
-<p class="hsl-text">This uses hsl(240, 100%, 50%)</p>
-<br><br>
+.cta-share:hover {
+  background-color: #219150;
+}
 
-    
-</body>
+/* Relative and absolute positioning */
+.relative-box {
+  position: relative;
+  background-color: #ecf0f1;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+}
 
-</html>
+.absolute-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.absolute-alone {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f39c12;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Unit comparison */
+.unit-parent {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.px-size {
+  font-size: 16px;
+}
+
+.em-size {
+  font-size: 1.25em;
+}
+
+.rem-size {
+  font-size: 1.25rem;
+}
+
+/* Two-column layout */
+.two-col {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.feed, .sidebar {
+  flex: 1;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Color examples */
+.rgb-text {
+  color: rgb(255, 0, 0);
+}
+
+.hex-text {
+  color: #00ff00;
+}
+
+.hsl-text {
+  color: hsl(240, 100%, 50%);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .two-col {
+    flex-direction: column;
+  }
+
+  .absolute-alone {
+    position: static;
+    margin-top: 1rem;
+  }
+}
